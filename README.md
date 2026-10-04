@@ -8,7 +8,7 @@ The application transforms plain text documents and image files into horizontall
 
 ## Key Features
 
-* **Manual Matrix Multiplication Engine:** Built entirely from scratch using a custom 3-nested-loop algorithm to demonstrate first-principles linear algebra ($O(H \cdot W^2)$) without reliance on high-level matrix shortcuts.
+* **Manual Matrix Multiplication Engine:** Built entirely from scratch using a custom 3-nested-loop algorithm to demonstrate first-principles linear algebra without reliance on high-level matrix shortcuts.
 * **Dual Medium Support:**
   * **Text Documents:** Converts typed strings or `.txt` files into ASCII scalar integer matrices with automated space padding (`ASCII 32`) for rectangular grid normalization.
   * **Image Documents:** Converts uploaded images (`.png`, `.jpg`, `.jpeg`) into single-channel 8-bit grayscale pixel matrices.
@@ -46,3 +46,16 @@ mirror-encoding/
 ├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
 └── docs/               # Architecture diagrams and mathematical documentation
+
+How to Run
+Setup Virtual Environment
+python -m venv venv
+venv\Scripts\activate
+
+Install Dependencies
+pip install -r requirements.txt
+
+Run the Program
+streamlit run app.py
+
+Upload image, text file or input text directly to perform the transformation
